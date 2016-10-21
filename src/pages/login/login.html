@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Login</ion-title>
   </ion-navbar>
 
@@ -29,8 +29,11 @@
         <ion-input type="password" name="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
       <div padding>
-        <button block (click)="login(l)">Log In</button>
+        <button ion-button block (click)="login(l)">Log In</button>
       </div>
     </form>
+    <div padding class="btn-link">
+      <button ion-button color="" block  clear (click)="forgotPassword()">Forgot Password ?</button>
+    </div>
   </ion-list>
 </ion-content>
